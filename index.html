@@ -1,0 +1,38 @@
+<html>
+<title>
+my example1
+</title>
+<head>
+<script>
+function show() {
+var name=document.getElementById("name").value;
+var gender=document.getElementById("gender").value;
+//var genderarray=document.getElementById("gender");
+//var selectedIndex=genderarray.selectedIndex;
+//console.log('genderarray='+JSON.stringify(genderarray));
+//console.log('selectedIndex='+selectedIndex);
+//var gender=genderarray[selectedIndex];
+console.log('gender='+gender);
+var message=' ';
+if(gender==='male'){
+message='hello mr. '+name;
+}
+else if (gender==='female'){
+message='hello ms. '+name;
+}
+else{
+message='hello '+name;
+}
+alert(message);
+
+}
+</script>
+</head>
+<body>
+<label>Name:</label> <input id="name"/>
+<label>Gender:</label><input id="gender"/>
+<input type="button" value="Submit" onclick="show()"/>
+
+</body>
+
+</html>
